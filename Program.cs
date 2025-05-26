@@ -314,6 +314,155 @@ namespace eustus
                 Console.WriteLine(p);
             }
 
+               //try , catch , finally error finder
+   //try
+   //{
+   //    Console.Write("How many daata want you to insert");
+   //    int data = int.Parse(Console.ReadLine());
+
+   //    string[] str = new string[data];
+
+   //    for (int i = 0; i < str.Length; i++)
+   //    {
+   //        Console.Write((str[i]) + "Student name : ");
+   //        str[i] = Console.ReadLine();
+   //    }
+
+   //    Console.Clear();
+   //    Console.WriteLine("----------------------");
+   //    for (int i = 0; i < str.Length; i++)
+   //    {
+
+   //        Console.WriteLine((str[i]) + "student name is : " + str[i]);
+   //    }
+
+   //}
+   //catch (Exception e) 
+   //    {
+   //        Console.WriteLine("Error : " + e.Message);
+   //    }
+
+   //finally {
+   //    Console.WriteLine("Program Ended");
+   //}
+
+
+   // Colllections
+
+   try
+   {
+
+       //array list collection non-genaric
+
+
+       //ArrayList f_list = new ArrayList();
+       //f_list.Add("Mango");
+       //f_list.Add("Orange");
+       //f_list.Add("Apple");
+       //f_list.Add("Banana");
+       //f_list.Add("Grapes");
+       //f_list.Remove("Banana");
+       //f_list.RemoveAt(3);
+
+       //foreach (var f in f_list)
+       //{
+
+       //    Console.WriteLine(f);
+       //}
+
+
+       //lsit list collection generaic
+
+       //                List<string> province = new List<string>();
+       //                province.Add("KPK");
+       //                province.Add("Balochistan");
+       //                province.Add("sindh");
+       //                province.Add("Punjab");
+       //                province.Add("Gilgit baldistaan");
+       //Console.WriteLine("-----Province Name");
+       //                foreach (string p in province) {
+
+
+       //Console.WriteLine(p); }
+
+       // Hsashet collection generaic
+
+       //HashSet<string> dishes = new HashSet<string>();
+       //dishes.Add("Biryani");
+       //dishes.Add("Nihari");
+       //dishes.Add("Karahi");
+       //dishes.Add("Pulao");
+       //dishes.Add("Chiken Tikka");
+       //dishes.Add("Biryani");
+       //dishes.Add("Biryani");
+       //dishes.Add("Biryani");
+
+       //foreach (var d in dishes) {
+
+       //    Console.WriteLine(d);
+       //}
+
+       //stack collection generaic
+
+       //Stack<string> letters = new Stack<string>();
+       //letters.Push("A");
+       //letters.Push("B");
+       //letters.Push("C");
+       //letters.Push("D");
+       //letters.Push("E");
+       //letters.Push("F");
+
+       //letters.Pop();
+       //letters.Pop();
+       //Console.WriteLine("--top letter");
+       //Console.WriteLine("top" + letters.Peek());
+       //foreach (string l in letters) {
+       //    Console.WriteLine(l);
+       //}
+
+       //quue collection generaic
+
+       //Queue<int> num = new Queue<int>();
+       //num.Enqueue(1);
+       //num.Enqueue(2);
+       //num.Enqueue(3);
+       //num.Enqueue(4);
+       //num.Enqueue(5);
+
+       //num.Dequeue();
+       //Console.WriteLine("---top number");
+       //Console.WriteLine(" num count" + num.Count);
+       //Console.WriteLine("top num" + num.Peek());
+
+       //foreach (int i in num) { 
+
+       //    Console.WriteLine(i);
+       //}
+
+       //Dictionary collection generaic
+
+       Dictionary<int,string> stu_info = new Dictionary<int,string>();
+       stu_info.Add(1, "Umar");
+       stu_info.Add(2, "ali");
+       stu_info.Add(3, "hassan");
+       stu_info.Add(4, "azan");
+       stu_info.Add(5, "mudassir");
+
+       stu_info.Remove(3);
+
+       foreach (var s in stu_info)
+       {
+           Console.WriteLine(s.Key + " => " + s.Value);
+       }
+
+
+   }
+   catch (Exception e){
+       Console.WriteLine(e.Message);
+   }
+
+
+
 
             
         }
